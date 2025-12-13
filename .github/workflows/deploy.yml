@@ -90,6 +90,11 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Install dependencies 🔧
+        run: |
+          bundle config set --local deployment true
+          bundle config set --local path vendor/bundle
+          bundle install --jobs 4 --retry 3
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
