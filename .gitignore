@@ -13,3 +13,5 @@ node_modules/
 vendor
 .idea
 .venv
+# Large video files
+assets/video/dash_1.mp4
