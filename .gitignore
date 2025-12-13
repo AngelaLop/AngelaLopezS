@@ -1,18 +1,21 @@
-_site
-.bundle
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-.DS_store
-.ruby-version
-.tweet-cache
-# Gemfile.lock - needed for GitHub Pages
-# Gemfile.lock
-assets/libs/
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache
+.jekyll-cache/
+_site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node (if you add any later)
 node_modules/
-vendor
-.idea
-.venv
-# Large video files
-assets/video/dash_1.mp4
-images/dash_1.mp4

@@ -1,59 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=preview.html">
-    <title>Redirecting to Portfolio Preview...</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        a {
-            color: white;
-            text-decoration: underline;
-            font-size: 1.1rem;
-        }
-        .spinner {
-            border: 4px solid rgba(255,255,255,0.3);
-            border-top: 4px solid white;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 2rem auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angela Lopez - Data & Social Scientist focused on understanding and communicating social and economic inequalities">
+    <title>Angela Lopez - Data & Social Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Masonry Layout -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <!-- Image Zoom -->
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>🎉 Your Portfolio is Ready!</h1>
-        <div class="spinner"></div>
-        <p>Redirecting to preview...</p>
-        <p>If you're not redirected, <a href="preview.html">click here</a></p>
-    </div>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Angela Lopez</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌓</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="profile">
+                        <img src="assets/img/angela_pic.svg" alt="Angela Lopez" class="profile-img zoom-image">
+                    </div>
+                    <div class="bio">
+                        <h2>Data & Social Scientist</h2>
+                        <p>I am a data and social scientist with training in computational analysis, economics, and international studies, focused on understanding and communicating social and economic inequalities.</p>
+                        <p>I believe that better public policy starts with high-quality data, from rigorous data collection and statistical production to careful analysis and clear visualization. My work focuses on inequalities in education, labor markets, income, and access to opportunities, combining hands-on experience in official statistics, data engineering, and policy analysis.</p>
+                        <p>I use data analysis and visualization not only to explain patterns, but to support evidence-based decision-making in public and international policy contexts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2>Selected Work</h2>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/poverty_predictor.png" alt="Poverty Predictor" class="zoom-image">
+                        </div>
+                        <div class="project-content">
+                            <h3>Poverty Predictor</h3>
+                            <p>Machine learning model to predict poverty levels and understand key socioeconomic factors contributing to income inequality.</p>
+                            <div class="tags">
+                                <span class="tag">Poverty & Income</span>
+                                <span class="tag">Inequality</span>
+                                <span class="tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video controls>
+                                <source src="assets/video/dinamic_ex.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <h3>Interactive Data Dashboard</h3>
+                            <p>Dynamic visualization dashboard for exploring social and economic indicators across different dimensions with real-time updates.</p>
+                            <div class="tags">
+                                <span class="tag">Data Visualization</span>
+                                <span class="tag">Education</span>
+                                <span class="tag">Labor Markets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video controls>
+                                <source src="assets/video/static_ex.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="project-content">
+                            <h3>Statistical Analysis Reports</h3>
+                            <p>Comprehensive statistical analysis combining quantitative methods with clear, accessible visualizations for policy-relevant insights.</p>
+                            <div class="tags">
+                                <span class="tag">Statistics</span>
+                                <span class="tag">Education</span>
+                                <span class="tag">Territorial Disparities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out via email or LinkedIn.</p>
+                <div class="social-links">
+                    <a href="mailto:your.email@example.com" class="social-link">Email</a>
+                    <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/AngelaLop" class="social-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Angela Lopez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
