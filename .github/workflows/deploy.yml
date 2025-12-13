@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - dev
     paths:
       - "assets/**"
       - "_sass/**"
@@ -34,6 +35,7 @@ on:
     branches:
       - master
       - main
+      - dev
     paths:
       - "assets/**"
       - "_sass/**"
