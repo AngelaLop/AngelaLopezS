@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Angela Lopez - Data & Social Scientist focused on understanding and communicating social and economic inequalities">
-    <title>Angela Lopez - Data & Social Scientist</title>
+    <title>Angela Lopez Sanchez - Data & Social Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Masonry Layout -->
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <!-- Image Zoom -->
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
 </head>
@@ -18,106 +19,522 @@
     <header>
         <nav>
             <div class="container">
-                <h1>Angela Lopez</h1>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌓</button></li>
-                </ul>
+                <div class="header-top">
+                    <div class="header-title-section">
+                        <h1>Ángela López Sánchez</h1>
+                        <div class="header-separator"></div>
+                        <span class="portfolio-text">Portfolio</span>
+                    </div>
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="#about" class="active">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#publications">PUBLICATIONS</a></li>
+                        <li><a href="#cv">CV</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="about" class="section" style="display: block;">
             <div class="container">
                 <div class="about-content">
                     <div class="profile">
-                        <img src="assets/img/angela_pic.svg" alt="Angela Lopez" class="profile-img zoom-image">
+                        <img src="assets/img/imagen2.jpeg" alt="Angela Lopez" class="profile-img zoom-image">
                     </div>
                     <div class="bio">
-                        <h2>Data & Social Scientist</h2>
-                        <p>I am a data and social scientist with training in computational analysis, economics, and international studies, focused on understanding and communicating social and economic inequalities.</p>
-                        <p>I believe that better public policy starts with high-quality data, from rigorous data collection and statistical production to careful analysis and clear visualization. My work focuses on inequalities in education, labor markets, income, and access to opportunities, combining hands-on experience in official statistics, data engineering, and policy analysis.</p>
-                        <p>I use data analysis and visualization not only to explain patterns, but to support evidence-based decision-making in public and international policy contexts.</p>
+                        <h2 class="name-title">About me</h2>
+                        <a href="https://github.com/AngelaLop" target="_blank" class="github-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>AngelaLop</span>
+                        </a>
+                        <p>I am a <strong>data</strong> and <strong>social scientist</strong> with training in computational analysis, economics, and international studies, focused on understanding and communicating <strong>social</strong> and <strong>economic inequalities</strong>.</p>
+                        <p>I believe that better public policy starts with high-quality <strong>data</strong>, from rigorous data collection and statistical production to careful analysis and clear <strong>visualization</strong>. My work focuses on inequalities in education, labor markets, income, and access to opportunities, combining hands-on experience in official statistics, data engineering, and policy analysis.</p>
+                        <p>I use <strong>data analysis</strong> and <strong>visualization</strong> not only to <strong>explain patterns</strong>, but to <strong>support evidence-based decision-making</strong> in <strong>public</strong> and <strong>international policy contexts</strong>.</p>
+                    </div>
+                </div>
+                
+                <!-- Selected Work within About -->
+                <div class="selected-work-divider"></div>
+                <h3 class="selected-work-title">Selected Work</h3>
+                
+                <div class="selected-work-grid">
+                    <!-- Featured Project 1: Panama Life Cycle -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Panama1_animated.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Panama Life Cycle Activity Explorer</h4>
+                            <p>This project builds an interactive "life cycle activity explorer" that lets users scrub through how participation in key life cycle activities (education, employment, unemployment, inactivity, retirement) varies across Panama's territories by age and gender.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">D3.js</span>
+                                <span class="tag">Data Visualization</span>
+                                <span class="tag">Panama</span>
+                            </div>
+                            <a href="https://angelalop.github.io/capp30239_interactive_viz/" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 2: Statistical Analysis -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/static_ex.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Location Matters for Unlocking People's Potential</h4>
+                            <p>This project examines regional inequalities in human capital across and within countries. The analysis investigates how location affects individuals' potential to accumulate human capital, measured through health outcomes and educational achievements.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Altair/Vega</span>
+                                <span class="tag">Statistics</span>
+                                <span class="tag">Policy Analysis</span>
+                            </div>
+                            <a href="https://angelalop.github.io/capp30239/" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 3: Poverty Predictor -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/img/poverty_predictor.png" alt="Poverty Predictor" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Poverty Classification with Multi-Modal Data</h4>
+                            <p>This project develops a machine learning model that classifies households into poverty categories by combining features extracted from satellite imagery (e.g., urbanization indicators, land cover types, nightlight radiance), and a limited set of household-level survey or proxy means test (PMT) questions.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Poverty</span>
+                            </div>
+                            <a href="https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias" target="_blank" class="project-link">View Repository →</a>
+                            <span class="project-note">Private repo - request access</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 4: Chicago Education -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Chicago_education.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Understanding Crime and School Attendance in Chicago</h4>
+                            <p>This project aims to integrate, analyze, and visualize spatial, administrative, and demographic data to characterize school dropouts across Chicago schools, with a particular focus on the role of crime in shaping these educational outcomes.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Dash</span>
+                            </div>
+                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-andes-indus-analytics" target="_blank" class="project-link">View Repository →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 5: OECD Geographic Inequalities -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/img/OCDE_2025.png?v=2" alt="Geographic Inequalities OECD" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Geographic Inequalities in Access to Opportunities</h4>
+                            <p>This report chapter examines how the place where people are born and grow up shapes their opportunities in life in OECD countries. I provided statistical assistance, created and coordinated the data visualizations for this chapter.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">OECD</span>
+                                <span class="tag tool-tag">Python</span>
+                            </div>
+                            <a href="https://www.oecd.org/en/publications/to-have-and-have-not-how-to-bridge-the-gap-in-opportunities_dec143ad-en/full-report/geographic-inequalities-in-access-to-opportunities_9cf8fd00.html" target="_blank" class="project-link">View Report →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 6: Panama Poverty Assessment -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/img/wrold_bank pna.png" alt="Panama Poverty Assessment" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Panama 2023 Poverty Assessment: Labor Market Technical Note</h4>
+                            <p>Panama has experienced significant economic growth over the past three decades, but labor market inequalities have prevented the equitable distribution of benefits. I prepared this technical note.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">The World Bank</span>
+                                <span class="tag tool-tag">Stata</span>
+                                <span class="tag">Policy Report</span>
+                            </div>
+                            <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099060525162515780" target="_blank" class="project-link">View Report →</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section projects-section">
+        <section id="projects" class="section projects-section" style="display: none;">
             <div class="container">
-                <h2>Selected Work</h2>
-                <div class="projects-grid" id="projectsGrid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/img/poverty_predictor.png" alt="Poverty Predictor" class="zoom-image">
-                        </div>
-                        <div class="project-content">
-                            <h3>Poverty Predictor</h3>
-                            <p>Machine learning model to predict poverty levels and understand key socioeconomic factors contributing to income inequality.</p>
-                            <div class="tags">
-                                <span class="tag">Poverty & Income</span>
-                                <span class="tag">Inequality</span>
-                                <span class="tag">Machine Learning</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <video controls>
-                                <source src="assets/video/dinamic_ex.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
+                <h2>Projects</h2>
+                <div class="selected-work-grid">
+                    <!-- Project 1: Panama Life Cycle -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Panama1_animated.mp4" type="video/mp4">
                             </video>
                         </div>
-                        <div class="project-content">
-                            <h3>Interactive Data Dashboard</h3>
-                            <p>Dynamic visualization dashboard for exploring social and economic indicators across different dimensions with real-time updates.</p>
+                        <div class="featured-project-content">
+                            <h4>Panama Life Cycle Activity Explorer</h4>
+                            <p>This project builds an interactive "life cycle activity explorer" that lets users scrub through how participation in key life cycle activities (education, employment, unemployment, inactivity, retirement) varies across Panama's territories by age and gender.</p>
                             <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">D3.js</span>
                                 <span class="tag">Data Visualization</span>
-                                <span class="tag">Education</span>
-                                <span class="tag">Labor Markets</span>
+                                <span class="tag">Panama</span>
                             </div>
+                            <a href="https://angelalop.github.io/capp30239_interactive_viz/" target="_blank" class="project-link">View Project →</a>
                         </div>
                     </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <video controls>
+                    
+                    <!-- Project 2: Location Matters -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
                                 <source src="assets/video/static_ex.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
                             </video>
                         </div>
-                        <div class="project-content">
-                            <h3>Statistical Analysis Reports</h3>
-                            <p>Comprehensive statistical analysis combining quantitative methods with clear, accessible visualizations for policy-relevant insights.</p>
+                        <div class="featured-project-content">
+                            <h4>Location Matters for Unlocking People's Potential</h4>
+                            <p>This project examines regional inequalities in human capital across and within countries. The analysis investigates how location affects individuals' potential to accumulate human capital, measured through health outcomes and educational achievements.</p>
                             <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Altair/Vega</span>
                                 <span class="tag">Statistics</span>
-                                <span class="tag">Education</span>
-                                <span class="tag">Territorial Disparities</span>
+                                <span class="tag">Policy Analysis</span>
                             </div>
+                            <a href="https://angelalop.github.io/capp30239/" target="_blank" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Poverty Classification -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/img/poverty_predictor.png" alt="Poverty Classification" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Poverty Classification with Multi-Modal Data</h4>
+                            <p>This project develops a machine learning model that classifies households into poverty categories by combining features extracted from satellite imagery (e.g., urbanization indicators, land cover types, nightlight radiance), and a limited set of household-level survey or proxy means test (PMT) questions.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Poverty</span>
+                            </div>
+                            <a href="https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias" target="_blank" class="project-link">View Repository →</a>
+                            <span class="project-note">Private repo - request access</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Chicago Education -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Chicago_education.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4>Understanding Crime and School Attendance in Chicago</h4>
+                            <p>This project aims to integrate, analyze, and visualize spatial, administrative, and demographic data to characterize school dropouts across Chicago schools, with a particular focus on the role of crime in shaping these educational outcomes.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">UChicago</span>
+                                <span class="tag tool-tag">Dash</span>
+                            </div>
+                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-andes-indus-analytics" target="_blank" class="project-link">View Repository →</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Publications Section -->
+        <section id="publications" class="section publications-section" style="display: none;">
+            <div class="container">
+                <h2>Publications</h2>
+                
+                <!-- Policy Briefs -->
+                <h3 class="publication-category">Selected Policy Briefs</h3>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/wrold_bank pna.png" alt="Panama Poverty Assessment">
+                        </div>
+                        <div class="pub-details">
+                            <h4>Panama Poverty Assessment: Technical note on Labor Market</h4>
+                            <p class="pub-authors">Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>The World Bank</em>, 2024</p>
+                            <div class="pub-buttons">
+                                <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099060525162515780" target="_blank" class="pub-btn">HTML</a>
+                                <a href="https://documents1.worldbank.org/curated/en/099060525162515780/pdf/P180301-8d385797-7b4f-4859-ad7a-3134abe2c612.pdf" target="_blank" class="pub-btn">PDF</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2024</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/bid_2024.png" alt="Education in LAC">
+                        </div>
+                        <div class="pub-details">
+                            <h4>The State of Education in Latin America and the Caribbean: Learning Assessments</h4>
+                            <p class="pub-authors">Arias, E., Dueñas, X., Giambruno, C., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Inter-American Development Bank</em>, 2024</p>
+                            <div class="pub-buttons">
+                                <a href="https://publications.iadb.org/en/publications/english/viewer/The-state-of-education-in-Latin-America-and-the-Caribbean-2024.pdf" target="_blank" class="pub-btn">HTML</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2024</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/digitagro_worldbank.png?v=2" alt="DIGITAGRO">
+                        </div>
+                        <div class="pub-details">
+                            <h4>DIGITAGRO: Investing in digital technology to increase market access for women agri-preneurs</h4>
+                            <p class="pub-authors">Perego, V.M.E., Romero, J., Freeman, K., Ortiz, G., Salas, R., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>The World Bank</em>, 2022</p>
+                            <div class="pub-buttons">
+                                <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099647307212221205" target="_blank" class="pub-btn">HTML</a>
+                                <a href="https://documents1.worldbank.org/curated/en/099647307212221205/pdf/IDU0dbdaa9b10af16042ab08407017cb31f384ba.pdf" target="_blank" class="pub-btn">PDF</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2022</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/educacion_superior_financiamiento.png" alt="Higher Education COVID">
+                        </div>
+                        <div class="pub-details">
+                            <h4>Educación superior y COVID-19 en América Latina y el Caribe: Financiamiento para los estudiantes</h4>
+                            <p class="pub-authors">Arias, E., Elaqua, G., Pedró, F., Vieira do Nascimento, D., Tellez, J., Peralta, R., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Inter-American Development Bank</em>, 2021</p>
+                            <div class="pub-buttons">
+                                <a href="https://publications.iadb.org/es/publications/spanish/viewer/Educacion-superior-y-COVID-19-en-America-Latina-y-el-Caribe-financiamiento-para-los-estudiantes.pdf" target="_blank" class="pub-btn">HTML</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2021</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/convid19_teachers_technologies.png" alt="Digital Technologies Professors">
+                        </div>
+                        <div class="pub-details">
+                            <h4>COVID19: digital technologies in higher education, what do professors think?</h4>
+                            <p class="pub-authors">Arias, E., Escamilla, J., Pena, L., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Inter-American Development Bank</em>, 2020</p>
+                            <div class="pub-buttons">
+                                <a href="https://publications.iadb.org/en/publications/english/viewer/CIMA-Brief-21-COVID-19-Digital-Technologies-in-Higher-Education-What-Do-Professors-Think.pdf" target="_blank" class="pub-btn">HTML</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2020</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/cima_meso_seguro.png" alt="Education Mesoamerica">
+                        </div>
+                        <div class="pub-details">
+                            <h4>¿Cuáles son los principales retos educativos de Mesoamérica?</h4>
+                            <p class="pub-authors">Castro, E., Zoido, P., Fernandez-Coto, R., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Inter-American Development Bank</em>, 2019</p>
+                            <div class="pub-buttons">
+                                <a href="https://publications.iadb.org/es/publications/spanish/viewer/Nota_CIMA__16_Cu%C3%A1les_son_los_principales_retos_educativos_de_Mesoam%C3%A9rica_es.pdf" target="_blank" class="pub-btn">HTML</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2019</div>
+                    </div>
+                </div>
+
+                <!-- Peer-Reviewed Journal Articles -->
+                <h3 class="publication-category" style="margin-top: 4rem;">Peer-Reviewed Journal Articles</h3>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <div class="pub-thumb-placeholder">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pub-details">
+                            <h4>Impact of Digital Technologies upon Teaching and Learning in Higher Education in Latin America</h4>
+                            <p class="pub-authors">Okoye, K., Haruna, H., Arrona-Palacios, A., Quintero, H. N., Ortega, L. O. P., Ortiz, E. A., Escamilla, J., Hosseini, S., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Education and Information Technologies</em>, 2022</p>
+                            <div class="pub-buttons">
+                                <a href="#" target="_blank" class="pub-btn">DOI</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2022</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <div class="pub-thumb-placeholder">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pub-details">
+                            <h4>Desigualdad de oportunidades en el sistema de educación pública en Bogota, Colombia</h4>
+                            <p class="pub-authors">Virgüez, A. F., Silva, A. C., Sarmiento, J. A., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Lecturas de Economia</em>, (87), 2017</p>
+                            <div class="pub-buttons">
+                                <a href="#" target="_blank" class="pub-btn">DOI</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2017</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <div class="pub-thumb-placeholder">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pub-details">
+                            <h4>El efecto de la gerencia privada de escuelas públicas en el desempeño estudiantil</h4>
+                            <p class="pub-authors">Virgüez, A. F., Sarmiento Espinel, J. A., Silva Arias, A. C., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Ecos de Economia</em>, 19(41), 2015</p>
+                            <div class="pub-buttons">
+                                <a href="#" target="_blank" class="pub-btn">DOI</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2015</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <div class="pub-thumb-placeholder">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pub-details">
+                            <h4>Autonomia femenina y factores asociados al uso de servicios maternos en Colombia</h4>
+                            <p class="pub-authors">Silva, A. C., Sarmiento, J. A., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Revista Latinoamericana de Ciencias Sociales</em>, 12(1), 2014</p>
+                            <div class="pub-buttons">
+                                <a href="#" target="_blank" class="pub-btn">DOI</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2014</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <div class="pub-thumb-placeholder">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pub-details">
+                            <h4>Determinantes y características de la oferta de cocaína en Colombia 1989-2005</h4>
+                            <p class="pub-authors">Cardenas, Sandoval, L. E., and Angela Lopez Sanchez</p>
+                            <p class="pub-journal"><em>Revista Facultad De Ciencias Económicas</em>, XVII, 2009</p>
+                            <div class="pub-buttons">
+                                <a href="#" target="_blank" class="pub-btn">DOI</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2009</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section cv-section" style="display: none;">
+            <div class="container">
+                <h2>Curriculum Vitae</h2>
+                <p>Download my complete CV to learn more about my experience, education, and qualifications.</p>
+                <div class="cv-download">
+                    <a href="assets/pdf/CV_ALOP_Word.pdf" download="CV_Angela_Lopez_Sanchez.pdf" class="cv-download-btn">
+                        <span class="cv-icon">📄</span>
+                        <span>Download CV (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
+        <section id="contact" class="section contact-section" style="display: none;">
             <div class="container">
                 <h2>Contact</h2>
-                <p>Feel free to reach out via email or LinkedIn.</p>
+                <p>Feel free to reach out via email or GitHub.</p>
                 <div class="social-links">
-                    <a href="mailto:your.email@example.com" class="social-link">Email</a>
-                    <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/AngelaLop" class="social-link" target="_blank">GitHub</a>
+                    <a href="mailto:alopezsanchez@uchicago.edu" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        Email
+                    </a>
+                    <a href="https://github.com/AngelaLop" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
                 </div>
             </div>
         </section>
@@ -125,10 +542,46 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Angela Lopez. All rights reserved.</p>
+            <p>&copy; 2025 Angela Lopez. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Fallback: Ensure sections work
+        (function() {
+            // Show about section immediately
+            var aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.style.display = 'block';
+            }
+            
+            // Handle clicks on navigation
+            var navLinks = document.querySelectorAll('nav a[href^="#"]');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    
+                    // Hide all sections
+                    document.querySelectorAll('.section').forEach(function(section) {
+                        section.classList.remove('active');
+                        section.style.display = 'none';
+                    });
+                    
+                    // Show target section
+                    var targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                        targetSection.style.display = 'block';
+                    }
+                    
+                    // Update active link
+                    navLinks.forEach(function(l) { l.classList.remove('active'); });
+                    this.classList.add('active');
+                });
+            });
+        })();
+    </script>
 </body>
 </html>
