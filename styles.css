@@ -594,7 +594,8 @@ nav a.active {
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.3rem;
+    margin-top: 0.75rem;
 }
 
 .tag {
@@ -616,6 +617,18 @@ nav a.active {
     background: var(--secondary-color);
     color: white;
     border-color: var(--secondary-color);
+}
+
+.methodology-tag {
+    background: #C46A4A;
+    color: white;
+    border-color: #C46A4A;
+}
+
+.thematic-tag {
+    background: #8FAEBF;
+    color: white;
+    border-color: #8FAEBF;
 }
 
 /* CV Section */
