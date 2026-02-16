@@ -96,6 +96,17 @@ function initNavigation() {
             showSection(sectionId);
         });
     });
+    
+    // Handle "View All" links within sections (like View All Publications)
+    document.querySelectorAll('.view-all-link[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute('href');
+            showSection(sectionId);
+            // Scroll to top of page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
 }
 
 // Wait for DOM to be ready
