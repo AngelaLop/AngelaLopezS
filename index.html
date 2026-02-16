@@ -636,29 +636,51 @@
                 aboutSection.style.display = 'block';
             }
             
+            // Function to show a section
+            function showSection(targetId) {
+                var navLinks = document.querySelectorAll('nav a[href^="#"]');
+                
+                // Hide all sections
+                document.querySelectorAll('.section').forEach(function(section) {
+                    section.classList.remove('active');
+                    section.style.display = 'none';
+                });
+                
+                // Show target section
+                var targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                    targetSection.style.display = 'block';
+                }
+                
+                // Update active nav link
+                navLinks.forEach(function(l) { l.classList.remove('active'); });
+                var activeNavLink = document.querySelector('nav a[href="' + targetId + '"]');
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active');
+                }
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            
             // Handle clicks on navigation
             var navLinks = document.querySelectorAll('nav a[href^="#"]');
             navLinks.forEach(function(link) {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                     var targetId = this.getAttribute('href');
-                    
-                    // Hide all sections
-                    document.querySelectorAll('.section').forEach(function(section) {
-                        section.classList.remove('active');
-                        section.style.display = 'none';
-                    });
-                    
-                    // Show target section
-                    var targetSection = document.querySelector(targetId);
-                    if (targetSection) {
-                        targetSection.classList.add('active');
-                        targetSection.style.display = 'block';
-                    }
-                    
-                    // Update active link
-                    navLinks.forEach(function(l) { l.classList.remove('active'); });
-                    this.classList.add('active');
+                    showSection(targetId);
+                });
+            });
+            
+            // Handle "View All" links (like View All Publications)
+            var viewAllLinks = document.querySelectorAll('.view-all-link[href^="#"]');
+            viewAllLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    showSection(targetId);
                 });
             });
         })();
