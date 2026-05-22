@@ -372,7 +372,7 @@ nav a.active {
 
 /* Projects Section */
 .projects-section {
-    background-color: var(--light-bg);
+    background-color: var(--bg-color);
 }
 
 /* Publications Section */
@@ -622,6 +622,7 @@ nav a.active {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 0.75rem;
 }
 
 .tag {
