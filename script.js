@@ -117,6 +117,54 @@ if (document.readyState === 'loading') {
     initNavigation();
 }
 
+// Footer year - keep current automatically
+(function () {
+    const yearEl = document.getElementById('footer-year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+})();
+
+// Project Videos - lazy-load on scroll, and respect reduced-motion preference
+(function () {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const videos = document.querySelectorAll('.featured-project-image video');
+
+    function loadVideo(video) {
+        if (video.dataset.loaded) return;
+        const source = video.querySelector('source[data-src]');
+        if (!source) return;
+
+        source.src = source.dataset.src;
+        video.load();
+        video.dataset.loaded = 'true';
+
+        if (prefersReducedMotion) {
+            // Don't autoplay; let the user start it themselves
+            video.controls = true;
+        } else {
+            video.play().catch(() => {});
+        }
+    }
+
+    if ('IntersectionObserver' in window) {
+        // Load each video only once it scrolls near the viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    loadVideo(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '300px 0px' });
+
+        videos.forEach((video) => observer.observe(video));
+    } else {
+        // Older browsers: just load them all
+        videos.forEach(loadVideo);
+    }
+})();
+
 // Masonry Layout disabled - using CSS Grid instead
 // If you want to use Masonry for different layouts, uncomment below:
 // if (typeof Masonry !== 'undefined') {
