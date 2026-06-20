@@ -1,0 +1,216 @@
+%--------------------------------------------------------------------------
+% Angela R. Lopez Sanchez - CV (English)
+% Compile with: xelatex CV_Lopez_EN.tex
+% Format adapted from Camacho_CV_Base.tex
+%--------------------------------------------------------------------------
+\documentclass[10pt]{article}
+
+%----- Packages ------------------------------------------------------------
+\usepackage[letterpaper,
+            top=0.52in, bottom=0.52in,
+            left=0.52in, right=0.52in]{geometry}
+
+\usepackage{fontspec}           % xelatex font selection
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+%----- Font ----------------------------------------------------------------
+\setmainfont{Times New Roman}
+
+%----- Colors & Hyperlinks -------------------------------------------------
+\definecolor{urlblue}{RGB}{5,99,193} % Standard Word hyperlink blue
+\hypersetup{
+  colorlinks=true,
+  urlcolor=urlblue,
+  pdfauthor={Angela R. Lopez Sanchez},
+  pdftitle={Angela R. Lopez Sanchez - CV}
+}
+
+%----- Global spacing ------------------------------------------------------
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+%----- Section heading style -----------------------------------------------
+\titleformat{\section}
+  {\normalfont\large\bfseries\MakeUppercase}
+  {}{0em}{}
+  [\vspace{-10pt}\rule{\linewidth}{0.5pt}\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{10pt}{0pt}
+
+%----- Reusable layout commands --------------------------------------------
+\newcommand{\org}[2]{\noindent\textbf{#1}\hfill #2\par\vspace{0pt}}
+\newcommand{\role}[2]{\noindent\textit{#1}\hfill #2\par\vspace{0pt}}
+\newcommand{\edu}[2]{\noindent #1\hfill #2\par\vspace{0pt}}
+
+% Bullet list style
+\newenvironment{cvitems}{%
+  \begin{itemize}[
+    leftmargin=1.2em,
+    itemsep=0pt,
+    parsep=0pt,
+    topsep=1pt,
+    label={$\bullet$}]%
+}{\end{itemize}}
+
+\newcommand{\entrygap}{\vspace{6pt}}
+
+%==========================================================================
+\begin{document}
+%==========================================================================
+
+%------ HEADER -------------------------------------------------------------
+\begin{center}
+  {\LARGE\textbf{ANGELA R. LOPEZ SANCHEZ}}\\[4pt]
+  +1 (202) 390-4849 $|$
+  \href{mailto:alopezsanchezv@gmail.com}{alopezsanchezv@gmail.com} $|$
+  \href{https://github.com/AngelaLop}{GitHub} $|$
+  \href{https://angelalop.github.io/AngelaLopezS/}{Portfolio} $|$
+  \href{https://scholar.google.com/citations?user=wfO9incAAAAJ&hl=en}{Google Scholar}
+\end{center}
+
+\vspace{3pt}
+
+%------ EDUCATION ----------------------------------------------------------
+\section{Education}
+
+\org{The University of Chicago}{Chicago, IL}
+\edu{Master of Science in Computational Analysis and Public Policy}{June 2026}
+\textbf{Relevant Coursework:} Advanced Machine Learning for Public Policy, Computer Science with Applications, Cloud Computing, Databases, Data Visualization\\
+\textbf{Award:} Banco de la Rep\'ublica (Central Bank of Colombia) National Merit Scholarship, one of only two awarded nationwide for graduate study in public policy
+
+\entrygap
+\org{Universidad de los Andes}{Bogot\'a, Colombia}
+\edu{Master of Social Sciences in International Studies}{April 2018}
+\textit{Thesis:} An Impact Evaluation of the Return of Colombians from Venezuela on Receiving Households' Well-being
+
+\entrygap
+\org{Universidad Militar Nueva Granada}{Bogot\'a, Colombia}
+\edu{Bachelor of Arts in Economics}{October 2011}
+
+%------ SKILLS -------------------------------------------------------------
+\section{Skills}
+
+\textbf{Programming Languages:} Python, R, Stata, SQL, JavaScript, HTML.
+\textbf{Libraries \& Frameworks:} D3.js, Altair/Vega, Dash, Next.js, MapLibre.
+\textbf{Cloud \& Data Infrastructure:} AWS (S3, EC2, IAM), DuckDB, Supabase, Git/GitHub, reproducible CLI pipelines.
+\textbf{Geospatial \& Remote Sensing:} Google Earth Engine, QGIS, ArcGIS, OSRM, FMM.
+\textbf{Methods:} Machine learning, causal inference \& econometrics, geospatial analysis, microsimulation, survey data.
+\textbf{BI:} Power BI.\\
+\textbf{Languages:} Spanish (Native), English (Fluent), French (Basic)
+
+%------ PROFESSIONAL EXPERIENCE --------------------------------------------
+\section{Professional Experience}
+
+\org{Inter-American Development Bank (IDB)}{Bogot\'a, Colombia (Remote)}
+\role{Senior Geospatial Consultant}{May 2025 -- Present}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Architected and delivered the first regional school-accessibility dataset for Latin America and the Caribbean (22 countries, 530,000 schools), now used by IDB education teams to benchmark access gaps
+  \item Built a reproducible Python CLI pipeline spanning geocoding, quality control, and dual travel-time modeling (FMM + OSRM network routing) to compute accessibility at continental scale
+\end{cvitems}
+
+\entrygap
+\org{Organisation for Economic Co-operation and Development (OECD)}{Paris, France}
+\role{Data \& Policy Consultant}{June -- September 2025}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Consolidated the first OECD social-capital dataset at subnational (TL2/TL3) resolution across OECD countries
+  \item Produced statistical analysis and designed all data visualizations for Chapter 3, ``Geographic Inequalities in Access to Opportunities,'' of the flagship report \textit{To Have and Have Not: How to Bridge the Gap in Opportunities}
+\end{cvitems}
+
+\entrygap
+\org{The World Bank}{Washington, D.C.}
+\role{Poverty Consultant}{August 2021 -- August 2024}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Simulated poverty and inequality outcomes in Panama under alternative policy and macroeconomic scenarios using microsimulation models in Stata, informing the Bank's Annual and Spring Meetings
+  \item Evaluated the distributional impact of welfare programs (e.g., cash transfers) under alternative eligibility criteria to inform targeting of Panama's beneficiary population
+  \item Authored and contributed to 3 analytical products on poverty, inequality, gender gaps, and exclusion to support policy dialogue with the government, including a Systematic Country Diagnostic update and a Poverty Assessment in which I led the labor-market background chapter
+\end{cvitems}
+
+\entrygap
+\org{Inter-American Development Bank (IDB)}{Washington, D.C.}
+\role{Data \& Policy Consultant}{June -- November 2022}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Consolidated the first regional dataset on learning-assessment characteristics for Latin America and the Caribbean
+  \item Drafted and delivered the policy report \textit{The State of Education in Latin America and the Caribbean: Learning Assessments}, supporting evidence-based education-policy dialogue
+\end{cvitems}
+
+\entrygap
+\org{Inter-American Development Bank (IDB)}{Washington, D.C.}
+\role{Economic Analyst, Education Division}{July 2018 -- August 2021}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Produced education and social statistics for LAC countries from household surveys and administrative data, delivering analytical products that supported policy dialogue with regional governments
+  \item Provided analytical and statistical support to launch the Bank's new Higher Education agenda for Latin America
+  \item Built data tools (a dashboard and automated reports) and advised the Bank's Social Sector divisions on recurring data analysis
+\end{cvitems}
+
+\entrygap
+\org{Departamento Administrativo Nacional de Estad\'istica (DANE -- Colombia National Statistics Office)}{Bogot\'a, Colombia}
+\role{Coordinator, SDG Unit}{February -- June 2018}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Led a team of 4 across DANE departments to define and design the methodology for 56 national indicators tracking the Sustainable Development Goals
+  \item Coordinated with external agencies to meet Post-2015 Agenda reporting requirements, and represented Colombia's statistics office in 3 international meetings setting SDG indicator methodologies
+\end{cvitems}
+
+\entrygap
+\org{Departamento Administrativo Nacional de Estad\'istica (DANE)}{Bogot\'a, Colombia}
+\role{Economic Analyst, Labor Market Unit}{February 2015 -- January 2018}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Produced monthly analyses of Colombia's labor market and socio-demographic indicators for national and international dissemination
+  \item Built and processed monthly household-survey datasets underpinning official labor-market and socioeconomic statistics, and trained survey enumerators quarterly to ensure data quality
+\end{cvitems}
+
+\entrygap
+\org{Universidad Militar Nueva Granada}{Bogot\'a, Colombia}
+\role{Research Assistant}{February 2013 -- December 2014}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Co-authored 7 national and 3 international academic presentations, 3 published articles, and 8 virtual learning objects
+  \item Led weekly sessions of the Economic Studies Research Group and advised undergraduates on research-initiation projects
+\end{cvitems}
+
+%------ SELECTED PROJECTS --------------------------------------------------
+\section{Selected Projects}
+
+\begin{cvitems}
+  \item \textbf{EduAccess LAC, School Accessibility Platform:} Shipped a full-stack geo-platform (Next.js, Supabase Postgres, Railway cron worker) that turns the IDB accessibility indicators for five LAC countries into a tool a non-technical ministry director can use; built a two-tier LLM cascade (Llama 3.1/3.3) that converts plain-English questions into prompt-injection-guarded, validated SQL and highlights results on a MapLibre map \href{https://eduaccess-lac.vercel.app/}{(Live)}
+  \item \textbf{Poverty Classification with Multi-Modal Data:} Trained a machine-learning model to sort households into poverty categories from satellite imagery plus a few proxy-means-test questions, a lower-cost way to target social programs where survey data is missing (Python, ML) \href{https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias}{(Repo)}
+  \item \textbf{Panama Life-Cycle Activity Explorer:} Interactive visualization of how participation in education, work, and retirement shifts across age, gender, and region in Panama, surfacing where youth leave school or women exit the labor force (Python, D3.js) \href{https://angelalop.github.io/capp30239_interactive_viz/}{(Live)}
+\end{cvitems}
+
+\vspace{2pt}
+For a complete list of projects, see my \href{https://angelalop.github.io/AngelaLopezS/}{portfolio}.
+
+%------ PUBLICATIONS -------------------------------------------------------
+\section{Selected Publications}
+
+\textbf{Peer-Reviewed Journal Articles}
+\begin{cvitems}
+  \item L\'opez, A.R., Okoye, K., Haruna, H., et al. (2022). Impact of Digital Technologies upon Teaching and Learning in Higher Education in Latin America: an Outlook on the Reach, Barriers, and Bottlenecks. \textit{Education and Information Technologies}
+  \item L\'opez, A.R., Virg\"uez, A.F., Silva, A.C., \& Sarmiento, J.A. (2017). Desigualdad de oportunidades en el sistema de educaci\'on p\'ublica en Bogot\'a, Colombia. \textit{Lecturas de Econom\'ia}, (87), 165--190
+  \item L\'opez, A.R., Virg\"uez, A.F., Sarmiento Espinel, J.A., \& Silva Arias, A.C. (2015). El efecto de la gerencia privada de escuelas p\'ublicas en el desempe\~no estudiantil en la educaci\'on media en Colombia. \textit{Ecos de Econom\'ia}, 19(41), 108--136
+\end{cvitems}
+
+\vspace{3pt}
+\textbf{Selected Policy Briefs}
+\begin{cvitems}
+  \item L\'opez, A. (2024). \textit{Panama Poverty Assessment: Technical Note on Labor Market}. The World Bank, Washington, D.C.
+  \item Arias, E., L\'opez, A., Due\~nas, X., \& Giambruno, C. (2024). \textit{The State of Education in Latin America and the Caribbean: Learning Assessments}. Inter-American Development Bank, Washington, D.C.
+  \item Arias, E., L\'opez, A., Elacqua, G., et al. (2021). \textit{Educaci\'on superior y COVID-19 en Am\'erica Latina y el Caribe: Financiamiento para los estudiantes}. Inter-American Development Bank, Washington, D.C.
+\end{cvitems}
+
+\vspace{2pt}
+For a complete list of publications, see my \href{https://scholar.google.com/citations?user=wfO9incAAAAJ&hl=en}{Google Scholar profile}.
+
+%==========================================================================
+\end{document}

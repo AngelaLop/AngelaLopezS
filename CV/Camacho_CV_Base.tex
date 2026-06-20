@@ -1,0 +1,207 @@
+%--------------------------------------------------------------------------
+% Andrés Felipe Camacho – CV Base
+% Compile with: xelatex Camacho_CV_Base.tex
+%--------------------------------------------------------------------------
+\documentclass[10pt]{article}
+
+%----- Packages ------------------------------------------------------------
+\usepackage[letterpaper,
+            top=0.52in, bottom=0.52in,
+            left=0.52in, right=0.52in]{geometry}
+
+\usepackage{fontspec}           % xelatex font selection
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+%----- Font ----------------------------------------------------------------
+\setmainfont{Times New Roman}
+
+%----- Colors & Hyperlinks -------------------------------------------------
+\definecolor{urlblue}{RGB}{5,99,193} % Standard Word hyperlink blue
+\hypersetup{
+  colorlinks=true,
+  urlcolor=urlblue,
+  pdfauthor={Andres Felipe Camacho},
+  pdftitle={Andres Felipe Camacho - CV}
+}
+
+%----- Global spacing ------------------------------------------------------
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+%----- Section heading style -----------------------------------------------
+\titleformat{\section}
+  {\normalfont\large\bfseries\MakeUppercase}
+  {}{0em}{}
+  [\vspace{-10pt}\rule{\linewidth}{0.5pt}\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{10pt}{0pt}
+
+%----- Reusable layout commands --------------------------------------------
+\newcommand{\org}[2]{\noindent\textbf{#1}\hfill #2\par\vspace{0pt}}
+\newcommand{\role}[2]{\noindent\textit{#1}\hfill #2\par\vspace{0pt}}
+\newcommand{\edu}[2]{\noindent #1\hfill #2\par\vspace{0pt}}
+
+% Bullet list style — matching Word original
+\newenvironment{cvitems}{%
+  \begin{itemize}[
+    leftmargin=1.2em,
+    itemsep=0pt,
+    parsep=0pt,
+    topsep=1pt,
+    label={$\bullet$}]%
+}{\end{itemize}}
+
+\newcommand{\entrygap}{\vspace{6pt}}
+
+%==========================================================================
+\begin{document}
+%==========================================================================
+
+%------ HEADER -------------------------------------------------------------
+\begin{center}
+  {\LARGE\textbf{ANDRÉS FELIPE CAMACHO}}\\[4pt]
+  +1 (773) 886-5961 $|$
+  \href{mailto:af.camacho.b9@gmail.com}{af.camacho.b9@gmail.com} $|$
+  \href{https://www.linkedin.com/in/anfelipecb/}{LinkedIn} $|$
+  \href{https://anfelipecb.github.io/}{anfelipecb.github.io}
+\end{center}
+
+\vspace{3pt}
+
+%------ EDUCATION ----------------------------------------------------------
+\section{Education}
+
+\org{The University of Chicago}{Chicago, IL}
+\edu{Master of Science in Computational Analysis and Public Policy}{June 2026 (Expected)}
+\textbf{Relevant Coursework:} Advanced Machine Learning, DevOps, Computer Science with Applications, Cloud Computing, AI Agents
+
+\entrygap
+\org{Universidad de los Andes}{Bogotá, Colombia}
+\edu{Master of Science in Economics}{October 2017}
+
+\entrygap
+\org{Universidad de los Andes}{Bogotá, Colombia}
+\edu{Bachelor of Engineering in Industrial Engineering}{July 2018}
+\edu{Bachelor of Arts in Economics}{October 2015}
+
+%------ SKILLS -------------------------------------------------------------
+\section{Skills}
+
+\textbf{Technical Skills:} Full-Stack AI Architecture, Python, R, SQL, Software Engineering (Git, Reproducible Workflows). \textbf{ML \& NLP:} LLMs (Anthropic, OpenAI), PyTorch, Hugging Face, scikit-learn. \textbf{Data \& Vis.:} Polars, AWS (S3, EC2), ChromaDB, Vega-Altair, KeplerGL, Maplibre, Stata.\\
+\textbf{Languages:} English (IELTS 8/9), Spanish (Native)
+
+%------ PROFESSIONAL EXPERIENCE --------------------------------------------
+\section{Professional Experience}
+
+\org{Mansueto Institute for Urban Innovation}{Chicago, IL}
+\role{Data Science Fellow – Local Data Journalism Initiative}{June 2025 – August 2025}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Architected an end-to-end full-stack AI pipeline to process 27,000+ scanned documents, combining OCR (Tesseract) with transformer-based NER to build structured databases for investigative journalism outcomes
+  \item Built and analyzed a structured database using Polars for efficient data wrangling and Vega-Altair for exploratory visualizations, contributing to five investigative journalism pieces on underreported incidents in the Illinois prison system
+\end{cvitems}
+
+\entrygap
+
+\org{World Bank}{Washington, D.C.}
+\role{Senior Spatial Data Consultant – Human Development (GGHVP) Unit}{May 2024 – September 2024}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Built a reproducible geospatial data integration pipeline to merge 250+ GB of high-resolution raster and census data across 20+ countries, enabling neighborhood-level outcomes analysis for the Human Capital Report
+  \item Standardized and harmonized 15+ global databases (4,800 data points), designing a robust data schema that defined the research framework
+  \item Architected interactive spatial analytics tools using Python and ArcGIS to identify neighborhood-level trends across 10 countries, facilitating lead researchers in drawing high-resolution spatial comparisons
+\end{cvitems}
+
+\entrygap
+
+\org{Inter-American Development Bank}{Bogotá, Colombia}
+\role{Research Data Scientist – Causal Inference}{May 2023 – September 2024}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Applied advanced causal inference and econometric modeling to evaluate the impacts of climate change on child development, as well as gender disparities in credit access, designing robust identification strategies for 3 peer-reviewed research papers
+  \item Developed automated high-resolution satellite imagery pipelines to process 10 years of global temporal data (9km $\times$ 9km resolution), performing spatial-temporal joins with national surveys to create causal models and estimations for 2 research papers
+\end{cvitems}
+
+\entrygap
+
+\org{Colombian Institute for the Evaluation of Education}{Bogotá, Colombia}
+\role{Lead Data Advisor}{October 2022 – January 2024}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Spearheaded the institute’s Analytics and Innovation Center, bridging complex evaluation data to senior stakeholders to drive evidence-based policy decisions across the national education system
+  \item Led the design and deployment of scalable data pipelines in AWS, delivering 5 dashboards, 2 applications, and 4 relational databases, managing 20M+ student assessment records
+\end{cvitems}
+
+\entrygap
+
+\org{Policy and Strategy Office, Office of the Attorney General of Colombia}{Bogotá, Colombia}
+\role{Data Scientist}{October 2018 – October 2022}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Developed predictive analytic models (XGBoost) using 994,000+ records to bridge the gap between code and business value, achieving potential 36\% gains in judicial efficiency and 25\% reduction in recidivism
+  \item Automated reporting workflows on large judicial databases using R, estimating case outcomes, optimizing targeting, and translating analytical findings into 10 concise policy memos for senior leadership
+  \item Scoped projects from design through delivery, applying causal inference matching and estimating methods for 5 distinct public policy evaluations on domestic violence and juvenile crime
+\end{cvitems}
+
+\newpage
+
+\org{CEDE \& CESED Research Centers, Universidad de los Andes}{Bogotá, Colombia}
+\role{Research Assistant}{January 2013 – September 2018}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Led spatial analysis, data management, and econometric modeling for 5 research projects using Stata and ArcGIS, supporting 5 research documents with impact evaluation models and policy recommendations on education, crime, incarceration and recidivism
+  \item Calculated the economic efficiency of 280 Colombian higher education institutions using SFA and DEA models, informing the Ministry of Education policies on outcomes efficiency, and elaboration of a book summarizing findings
+\end{cvitems}
+
+%------ TEACHING EXPERIENCE ------------------------------------------------
+\section{Teaching Experience}
+
+\org{University of Chicago}{Chicago, IL}
+\role{Teaching Assistant: Data Science Clinic, Computer Science with Applications I and II}{September 2025 – Present}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Mentored data science teams on the development and evaluation of computer vision pipelines for organoid imaging and ML metabolite models; advised a spatial analytics project on Chicago housing and rental prices
+  \item Mentored students in software engineering, including code quality, algorithmic efficiency, data structures, and testing using Python
+\end{cvitems}
+\role{Harris Tutor: Python, Stata, R}{January 2025 – May 2025}
+
+\entrygap
+
+\org{Economics Department, Universidad de los Andes}{Bogotá, Colombia}
+\role{Founder, Spatial Data Analysis Workshop in ArcGIS}{January 2016 – July 2024}
+\role{Lecturer, Spatial Data Analysis and Applications in Python}{July 2022 – July 2024}
+\role{Teaching Assistant}{January 2016 – May 2024}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Graduate (Ms.): Crime Economics, Micro-econometrics, Impact Evaluation, Data Analysis Techniques, Quantitative Methods
+  \item Undergraduate: Introductory and Intermediate Econometrics
+\end{cvitems}
+
+%------ SELECTED PROJECTS --------------------------------------------------
+\section{Selected Projects}
+
+\begin{cvitems}
+  \item \textbf{Full-Stack AI Deliberative Committee:} Architected an end-to-end multi-agent system (Claude 3.5) with synthetic representative personas to simulate policy outcomes and evaluate urban proposals \href{https://github.com/anfelipecb/AI-Augmetnted-Deliberative-Committee}{(Repo)}
+  \item \textbf{Conflict Prediction with ML:} Built ensemble ML pipeline (RF, NN, KNN) achieving 92.3\% accuracy and 0.93 ROC AUC to predict violent conflict across 50km grid cells continent-wide; integrated ERA5 climate, UCDP events, and NASA VIIRS data using Google Earth Engine and PyTorch \href{https://github.com/anfelipecb/conflict-prediction-ml}{(Repo)}
+  \item \textbf{Adversarial AI Committees for Personalized Competency Development:} Engineered persona simulation environments with Qwen2.5-7B (4-bit) to diagnose and reduce mechanical AI reliance; achieved 4.15-point improvement in methodological reasoning validated on 345 student author memos \href{https://github.com/anfelipecb/AI-Agents-Final-Project}{(Repo)}
+\end{cvitems}
+
+%------ PUBLICATIONS -------------------------------------------------------
+\section{Publications}
+
+\begin{cvitems}
+  \item Cuartas, J., \& Camacho, A. (2025). High temperatures and violent child punishment at home: Evidence from six countries. \textit{Psychology of Violence}, 15(6), 670--681. \href{https://psycnet.apa.org/record/2026-64418-001}{Available here}
+  \item Cuartas, J., Balza, L. H., Camacho, A., \& Gómez-Parra, N. (2025). Ambient Heat and Early Childhood Development: A Cross-National Analysis. \textit{Journal of Child Psychology and Psychiatry}. \href{https://acamh.onlinelibrary.wiley.com/share/RVGWC3NCQNFQ4ARNAUFI?target=10.1111/jcpp.70081}{Available here}
+  \item Working paper: Using Artificial Intelligence in the Request of Pretrial Measures: approaching the Uncertainty in Recidivism Risk (With Daniel Mejía). \href{https://anfelipecb.github.io/assets/pdf/Prisma\%20Paper\%20VEng.pdf}{Available here}
+\end{cvitems}
+
+\vspace{1pt}
+For a complete list of publications and citation metrics, you can see my \href{https://scholar.google.com/citations?user=-dF0xsAAAAAJ&hl=en}{Google Scholar profile}.
+
+%==========================================================================
+\end{document}

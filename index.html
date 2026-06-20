@@ -23,16 +23,17 @@
                     <div class="header-title-section">
                         <h1>Ángela López Sánchez</h1>
                         <div class="header-separator"></div>
-                        <span class="portfolio-text">Portfolio</span>
+                        <span class="portfolio-text" data-i18n="portfolio_text">Portfolio</span>
                     </div>
                 </div>
                 <div class="header-menu">
                     <ul>
-                        <li><a href="#about" class="active">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#publications">PUBLICATIONS</a></li>
-                        <li><a href="#cv">CV</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#about" class="active" data-i18n="nav_about">ABOUT</a></li>
+                        <li><a href="#projects" data-i18n="nav_projects">PROJECTS</a></li>
+                        <li><a href="#publications" data-i18n="nav_publications">PUBLICATIONS</a></li>
+                        <li><a href="#cv" data-i18n="nav_cv">CV</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">CONTACT</a></li>
+                        <li><button id="langToggle" class="lang-toggle" aria-label="Switch language">ES</button></li>
                         <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="5"></circle>
@@ -61,22 +62,22 @@
                         <img src="assets/img/imagen2.jpeg" alt="Angela Lopez" class="profile-img zoom-image">
                     </div>
                     <div class="bio">
-                        <h2 class="name-title">About me</h2>
+                        <h2 class="name-title" data-i18n="about_title">About me</h2>
                         <a href="https://github.com/AngelaLop" target="_blank" class="github-link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
                             <span>AngelaLop</span>
                         </a>
-                        <p>I am a <strong>data</strong> and <strong>social scientist</strong> with training in computational analysis, economics, and international studies, focused on understanding and communicating social and economic inequalities.</p>
-                        <p>I believe that better public policy starts with high-quality data, from rigorous data collection and statistical production to <strong>careful analysis</strong> and <strong>clear visualization</strong>. My work focuses on inequalities in education, labor markets, income, and access to opportunities, combining hands-on experience in <strong>official statistics, data engineering, and policy analysis</strong>.</p>
-                        <p>I use <strong>data analysis</strong> and <strong>visualization</strong> not only to explain patterns, but to support evidence-based decision-making in public and international policy contexts.</p>
+                        <p data-i18n="bio_p1">I am a <strong>data</strong> and <strong>social scientist</strong> with training in computational analysis, economics, and international studies, focused on understanding and communicating social and economic inequalities.</p>
+                        <p data-i18n="bio_p2">I believe that better public policy starts with high-quality data, from rigorous data collection and statistical production to <strong>careful analysis</strong> and <strong>clear visualization</strong>. My work focuses on inequalities in education, labor markets, income, and access to opportunities, combining hands-on experience in <strong>official statistics, data engineering, and policy analysis</strong>.</p>
+                        <p data-i18n="bio_p3">I use <strong>data analysis</strong> and <strong>visualization</strong> not only to explain patterns, but to support evidence-based decision-making in public and international policy contexts.</p>
                     </div>
                 </div>
                 
                 <!-- Selected Work within About -->
                 <div class="selected-work-divider"></div>
-                <h3 class="selected-work-title">Selected Work</h3>
+                <h3 class="selected-work-title" data-i18n="selected_work">Selected Work</h3>
                 
                 <div class="selected-work-grid">
                     <!-- Featured Project 0: EduAccess LAC -->
@@ -87,18 +88,18 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>EduAccess LAC: School Accessibility Platform</h4>
-                            <p>An interactive geo-platform built on school-accessibility indicators I calculated for the Inter-American Development Bank. It maps how easily students reach schools across five Latin American countries, with an AI assistant that turns plain-English questions into validated SQL.</p>
+                            <h4 data-i18n="proj_eduaccess_t">EduAccess LAC: School Accessibility Platform</h4>
+                            <p data-i18n="proj_eduaccess_d">An interactive geo-platform built on school-accessibility indicators I calculated for the Inter-American Development Bank. It maps how easily students reach schools across five Latin American countries, with an AI assistant that turns plain-English questions into validated SQL.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag institution-tag">IDB</span>
                                 <span class="tag tool-tag">Next.js</span>
                                 <span class="tag tool-tag">MapLibre</span>
                                 <span class="tag tool-tag">Supabase</span>
-                                <span class="tag tool-tag">AI Assistant</span>
-                                <span class="tag">Education Policy</span>
+                                <span class="tag tool-tag" data-i18n="tag_ai">AI Assistant</span>
+                                <span class="tag" data-i18n="tag_edupolicy">Education Policy</span>
                             </div>
-                            <a href="https://eduaccess-lac.vercel.app/" target="_blank" class="project-link">View Platform →</a>
+                            <a href="https://eduaccess-lac.vercel.app/" target="_blank" class="project-link" data-i18n="link_platform">View Platform →</a>
                         </div>
                     </div>
 
@@ -110,16 +111,16 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>Panama Life Cycle Activity Explorer</h4>
-                            <p>How does participation in education, work, and retirement shift over a person's life, and how unevenly across Panama? This explorer maps it by age, gender, and region, showing where young people leave school or women exit the labor force.</p>
+                            <h4 data-i18n="proj_panama_t">Panama Life Cycle Activity Explorer</h4>
+                            <p data-i18n="proj_panama_d">How does participation in education, work, and retirement shift over a person's life, and how unevenly across Panama? This explorer maps it by age, gender, and region, showing where young people leave school or women exit the labor force.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Python</span>
                                 <span class="tag tool-tag">D3.js</span>
-                                <span class="tag">Data Visualization</span>
-                                <span class="tag">Panama</span>
+                                <span class="tag" data-i18n="tag_dataviz">Data Visualization</span>
+                                <span class="tag" data-i18n="tag_panama">Panama</span>
                             </div>
-                            <a href="https://angelalop.github.io/capp30239_interactive_viz/" target="_blank" class="project-link">View Project →</a>
+                            <a href="https://angelalop.github.io/capp30239_interactive_viz/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
                         </div>
                     </div>
                     
@@ -131,16 +132,16 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>Location Matters for Unlocking People's Potential</h4>
-                            <p>National averages mask wide inequalities. This project measures regional gaps in health and education within and across countries, showing how strongly birthplace shapes the human capital a person can build.</p>
+                            <h4 data-i18n="proj_location_t">Location Matters for Unlocking People's Potential</h4>
+                            <p data-i18n="proj_location_d">National averages mask wide inequalities. This project measures regional gaps in health and education within and across countries, showing how strongly birthplace shapes the human capital a person can build.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Python</span>
                                 <span class="tag tool-tag">Altair/Vega</span>
-                                <span class="tag">Statistics</span>
-                                <span class="tag">Policy Analysis</span>
+                                <span class="tag" data-i18n="tag_stats">Statistics</span>
+                                <span class="tag" data-i18n="tag_policyanalysis">Policy Analysis</span>
                             </div>
-                            <a href="https://angelalop.github.io/capp30239/" target="_blank" class="project-link">View Project →</a>
+                            <a href="https://angelalop.github.io/capp30239/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
                         </div>
                     </div>
                     
@@ -150,16 +151,16 @@
                             <img src="assets/img/poverty_predictor.png" alt="Poverty Predictor" class="zoom-image">
                         </div>
                         <div class="featured-project-content">
-                            <h4>Poverty Classification with Multi-Modal Data</h4>
-                            <p>Full poverty surveys are costly and slow. This project trains a machine learning model that sorts households into poverty categories from satellite imagery plus a few proxy means test questions, a lower-cost way to target social programs where survey data is missing.</p>
+                            <h4 data-i18n="proj_poverty_t">Poverty Classification with Multi-Modal Data</h4>
+                            <p data-i18n="proj_poverty_d">Full poverty surveys are costly and slow. This project trains a machine learning model that sorts households into poverty categories from satellite imagery plus a few proxy means test questions, a lower-cost way to target social programs where survey data is missing.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Python</span>
-                                <span class="tag">Machine Learning</span>
-                                <span class="tag">Poverty</span>
+                                <span class="tag" data-i18n="tag_ml">Machine Learning</span>
+                                <span class="tag" data-i18n="tag_poverty">Poverty</span>
                             </div>
-                            <a href="https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias" target="_blank" class="project-link">View Repository →</a>
-                            <span class="project-note">Private repo - request access</span>
+                            <a href="https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias" target="_blank" class="project-link" data-i18n="link_repo">View Repository →</a>
+                            <span class="project-note" data-i18n="note_private">Private repo - request access</span>
                         </div>
                     </div>
                     
@@ -171,13 +172,13 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>Understanding Crime and School Attendance in Chicago</h4>
-                            <p>Does neighborhood crime push students out of school? This interactive dashboard maps dropout patterns across Chicago schools and pinpoints where crime weighs most heavily on attendance.</p>
+                            <h4 data-i18n="proj_chicago_t">Understanding Crime and School Attendance in Chicago</h4>
+                            <p data-i18n="proj_chicago_d">Does neighborhood crime push students out of school? This interactive dashboard maps dropout patterns across Chicago schools and pinpoints where crime weighs most heavily on attendance.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Dash</span>
                             </div>
-                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-andes-indus-analytics" target="_blank" class="project-link">View Repository →</a>
+                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-andes-indus-analytics" target="_blank" class="project-link" data-i18n="link_repo">View Repository →</a>
                         </div>
                     </div>
                     
@@ -187,20 +188,20 @@
                             <img src="assets/img/OCDE_2025.png?v=2" alt="Geographic Inequalities OECD" class="zoom-image">
                         </div>
                         <div class="featured-project-content">
-                            <h4>Geographic Inequalities in Access to Opportunities</h4>
-                            <p>Where people are born and grow up shapes their life chances across OECD countries. For this OECD report chapter, I created and coordinated all of the data visualizations.</p>
+                            <h4 data-i18n="proj_oecd_t">Geographic Inequalities in Access to Opportunities</h4>
+                            <p data-i18n="proj_oecd_d">Where people are born and grow up shapes their life chances across OECD countries. For this OECD report chapter, I created and coordinated all of the data visualizations.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">OECD</span>
                                 <span class="tag tool-tag">Python</span>
                             </div>
-                            <a href="https://www.oecd.org/en/publications/to-have-and-have-not-how-to-bridge-the-gap-in-opportunities_dec143ad-en/full-report/geographic-inequalities-in-access-to-opportunities_9cf8fd00.html" target="_blank" class="project-link">View Report →</a>
+                            <a href="https://www.oecd.org/en/publications/to-have-and-have-not-how-to-bridge-the-gap-in-opportunities_dec143ad-en/full-report/geographic-inequalities-in-access-to-opportunities_9cf8fd00.html" target="_blank" class="project-link" data-i18n="link_report">View Report →</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Publications Preview within About -->
                 <div class="selected-work-divider"></div>
-                <h3 class="selected-work-title">Selected Publications</h3>
+                <h3 class="selected-work-title" data-i18n="selected_pubs">Selected Publications</h3>
                 
                 <div class="publications-list publications-preview">
                     <div class="pub-item">
@@ -267,7 +268,7 @@
                 </div>
                 
                 <div class="view-all-publications">
-                    <a href="#publications" class="view-all-link">View All Publications →</a>
+                    <a href="#publications" class="view-all-link" data-i18n="view_all_pubs">View All Publications →</a>
                 </div>
             </div>
         </section>
@@ -275,7 +276,7 @@
         <!-- Projects Section -->
         <section id="projects" class="section projects-section" style="display: none;">
             <div class="container">
-                <h2>Projects</h2>
+                <h2 data-i18n="projects_h2">Projects</h2>
                 <div class="selected-work-grid">
                     <!-- Project 0: EduAccess LAC -->
                     <div class="featured-project">
@@ -285,18 +286,18 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>EduAccess LAC: School Accessibility Platform</h4>
-                            <p>An interactive geo-platform built on school-accessibility indicators I calculated for the Inter-American Development Bank. It maps how easily students reach schools across five Latin American countries, with an AI assistant that turns plain-English questions into validated SQL.</p>
+                            <h4 data-i18n="proj_eduaccess_t">EduAccess LAC: School Accessibility Platform</h4>
+                            <p data-i18n="proj_eduaccess_d">An interactive geo-platform built on school-accessibility indicators I calculated for the Inter-American Development Bank. It maps how easily students reach schools across five Latin American countries, with an AI assistant that turns plain-English questions into validated SQL.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag institution-tag">IDB</span>
                                 <span class="tag tool-tag">Next.js</span>
                                 <span class="tag tool-tag">MapLibre</span>
                                 <span class="tag tool-tag">Supabase</span>
-                                <span class="tag tool-tag">AI Assistant</span>
-                                <span class="tag">Education Policy</span>
+                                <span class="tag tool-tag" data-i18n="tag_ai">AI Assistant</span>
+                                <span class="tag" data-i18n="tag_edupolicy">Education Policy</span>
                             </div>
-                            <a href="https://eduaccess-lac.vercel.app/" target="_blank" class="project-link">View Platform →</a>
+                            <a href="https://eduaccess-lac.vercel.app/" target="_blank" class="project-link" data-i18n="link_platform">View Platform →</a>
                         </div>
                     </div>
 
@@ -308,16 +309,16 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>Panama Life Cycle Activity Explorer</h4>
-                            <p>How does participation in education, work, and retirement shift over a person's life, and how unevenly across Panama? This explorer maps it by age, gender, and region, showing where young people leave school or women exit the labor force.</p>
+                            <h4 data-i18n="proj_panama_t">Panama Life Cycle Activity Explorer</h4>
+                            <p data-i18n="proj_panama_d">How does participation in education, work, and retirement shift over a person's life, and how unevenly across Panama? This explorer maps it by age, gender, and region, showing where young people leave school or women exit the labor force.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Python</span>
                                 <span class="tag tool-tag">D3.js</span>
-                                <span class="tag">Data Visualization</span>
-                                <span class="tag">Panama</span>
+                                <span class="tag" data-i18n="tag_dataviz">Data Visualization</span>
+                                <span class="tag" data-i18n="tag_panama">Panama</span>
                             </div>
-                            <a href="https://angelalop.github.io/capp30239_interactive_viz/" target="_blank" class="project-link">View Project →</a>
+                            <a href="https://angelalop.github.io/capp30239_interactive_viz/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
                         </div>
                     </div>
                     
@@ -329,16 +330,16 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>Location Matters for Unlocking People's Potential</h4>
-                            <p>National averages mask wide inequalities. This project measures regional gaps in health and education within and across countries, showing how strongly birthplace shapes the human capital a person can build.</p>
+                            <h4 data-i18n="proj_location_t">Location Matters for Unlocking People's Potential</h4>
+                            <p data-i18n="proj_location_d">National averages mask wide inequalities. This project measures regional gaps in health and education within and across countries, showing how strongly birthplace shapes the human capital a person can build.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Python</span>
                                 <span class="tag tool-tag">Altair/Vega</span>
-                                <span class="tag">Statistics</span>
-                                <span class="tag">Policy Analysis</span>
+                                <span class="tag" data-i18n="tag_stats">Statistics</span>
+                                <span class="tag" data-i18n="tag_policyanalysis">Policy Analysis</span>
                             </div>
-                            <a href="https://angelalop.github.io/capp30239/" target="_blank" class="project-link">View Project →</a>
+                            <a href="https://angelalop.github.io/capp30239/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
                         </div>
                     </div>
                     
@@ -348,16 +349,16 @@
                             <img src="assets/img/poverty_predictor.png" alt="Poverty Classification" class="zoom-image">
                         </div>
                         <div class="featured-project-content">
-                            <h4>Poverty Classification with Multi-Modal Data</h4>
-                            <p>Full poverty surveys are costly and slow. This project trains a machine learning model that sorts households into poverty categories from satellite imagery plus a few proxy means test questions, a lower-cost way to target social programs where survey data is missing.</p>
+                            <h4 data-i18n="proj_poverty_t">Poverty Classification with Multi-Modal Data</h4>
+                            <p data-i18n="proj_poverty_d">Full poverty surveys are costly and slow. This project trains a machine learning model that sorts households into poverty categories from satellite imagery plus a few proxy means test questions, a lower-cost way to target social programs where survey data is missing.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Python</span>
-                                <span class="tag">Machine Learning</span>
-                                <span class="tag">Poverty</span>
+                                <span class="tag" data-i18n="tag_ml">Machine Learning</span>
+                                <span class="tag" data-i18n="tag_poverty">Poverty</span>
                             </div>
-                            <a href="https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias" target="_blank" class="project-link">View Repository →</a>
-                            <span class="project-note">Private repo - request access</span>
+                            <a href="https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias" target="_blank" class="project-link" data-i18n="link_repo">View Repository →</a>
+                            <span class="project-note" data-i18n="note_private">Private repo - request access</span>
                         </div>
                     </div>
                     
@@ -369,13 +370,13 @@
                             </video>
                         </div>
                         <div class="featured-project-content">
-                            <h4>Understanding Crime and School Attendance in Chicago</h4>
-                            <p>Does neighborhood crime push students out of school? This interactive dashboard maps dropout patterns across Chicago schools and pinpoints where crime weighs most heavily on attendance.</p>
+                            <h4 data-i18n="proj_chicago_t">Understanding Crime and School Attendance in Chicago</h4>
+                            <p data-i18n="proj_chicago_d">Does neighborhood crime push students out of school? This interactive dashboard maps dropout patterns across Chicago schools and pinpoints where crime weighs most heavily on attendance.</p>
                             <div class="tags">
                                 <span class="tag institution-tag">UChicago</span>
                                 <span class="tag tool-tag">Dash</span>
                             </div>
-                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-andes-indus-analytics" target="_blank" class="project-link">View Repository →</a>
+                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-andes-indus-analytics" target="_blank" class="project-link" data-i18n="link_repo">View Repository →</a>
                         </div>
                     </div>
                 </div>
@@ -385,10 +386,10 @@
         <!-- Publications Section -->
         <section id="publications" class="section publications-section" style="display: none;">
             <div class="container">
-                <h2>Publications</h2>
-                
+                <h2 data-i18n="publications_h2">Publications</h2>
+
                 <!-- Policy Briefs -->
-                <h3 class="publication-category">Selected Policy Briefs</h3>
+                <h3 class="publication-category" data-i18n="cat_briefs">Selected Policy Briefs</h3>
                 <div class="publications-list">
                     <div class="pub-item">
                         <div class="pub-thumb">
@@ -484,7 +485,7 @@
                 </div>
 
                 <!-- Peer-Reviewed Journal Articles -->
-                <h3 class="publication-category" style="margin-top: 4rem;">Peer-Reviewed Journal Articles</h3>
+                <h3 class="publication-category" style="margin-top: 4rem;" data-i18n="cat_articles">Peer-Reviewed Journal Articles</h3>
                 <div class="publications-list">
                     <div class="pub-item">
                         <div class="pub-thumb">
@@ -575,12 +576,12 @@
         <!-- CV Section -->
         <section id="cv" class="section cv-section" style="display: none;">
             <div class="container">
-                <h2>Curriculum Vitae</h2>
-                <p>Download my complete CV to learn more about my experience, education, and qualifications.</p>
+                <h2 data-i18n="cv_h2">Curriculum Vitae</h2>
+                <p data-i18n="cv_desc">Download my complete CV to learn more about my experience, education, and qualifications.</p>
                 <div class="cv-download">
-                    <a href="assets/pdf/CV_ALOP_Word.pdf" download="CV_Angela_Lopez_Sanchez.pdf" class="cv-download-btn">
+                    <a href="assets/pdf/CV_Angela_Lopez_EN.pdf" download="CV_Angela_Lopez_Sanchez_EN.pdf" class="cv-download-btn" id="cvDownload">
                         <span class="cv-icon">📄</span>
-                        <span>Download CV (PDF)</span>
+                        <span data-i18n="cv_btn">Download CV (PDF)</span>
                     </a>
                 </div>
             </div>
@@ -589,14 +590,14 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact-section" style="display: none;">
             <div class="container">
-                <h2>Contact</h2>
-                <p>Feel free to reach out via email or GitHub.</p>
+                <h2 data-i18n="contact_h2">Contact</h2>
+                <p data-i18n="contact_desc">Feel free to reach out via email or GitHub.</p>
                 <div class="social-links">
-                    <a href="mailto:alopezsanchez@uchicago.edu" class="social-link">
+                    <a href="mailto:alopezsanchezv@gmail.com" class="social-link">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
-                        Email
+                        <span data-i18n="contact_email">Email</span>
                     </a>
                     <a href="https://github.com/AngelaLop" class="social-link" target="_blank">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
@@ -611,7 +612,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="footer-year">2026</span> Angela Lopez. All rights reserved.</p>
+            <p>&copy; <span id="footer-year">2026</span> <span data-i18n="footer_rights">Angela Lopez. All rights reserved.</span></p>
         </div>
     </footer>
 
@@ -672,6 +673,128 @@
                     showSection(targetId);
                 });
             });
+        })();
+    </script>
+    <!-- Language toggle (EN/ES) -->
+    <script>
+        (function() {
+            var ES = {
+                portfolio_text: "Portafolio",
+                nav_about: "SOBRE MÍ",
+                nav_projects: "PROYECTOS",
+                nav_publications: "PUBLICACIONES",
+                nav_cv: "CV",
+                nav_contact: "CONTACTO",
+                about_title: "Sobre mí",
+                bio_p1: "Soy <strong>científica de datos</strong> y <strong>científica social</strong> con formación en análisis computacional, economía y estudios internacionales, enfocada en entender y comunicar desigualdades sociales y económicas.",
+                bio_p2: "Creo que una mejor política pública empieza con datos de alta calidad, desde una recolección rigurosa y la producción estadística hasta el <strong>análisis cuidadoso</strong> y la <strong>visualización clara</strong>. Mi trabajo se centra en las desigualdades en educación, mercados laborales, ingresos y acceso a oportunidades, combinando experiencia práctica en <strong>estadística oficial, ingeniería de datos y análisis de políticas</strong>.",
+                bio_p3: "Uso el <strong>análisis de datos</strong> y la <strong>visualización</strong> no solo para explicar patrones, sino para apoyar la toma de decisiones basada en evidencia en contextos de política pública e internacional.",
+                selected_work: "Trabajo seleccionado",
+                selected_pubs: "Publicaciones seleccionadas",
+                proj_eduaccess_t: "EduAccess LAC: Plataforma de Accesibilidad Escolar",
+                proj_eduaccess_d: "Una geo-plataforma interactiva construida sobre los indicadores de accesibilidad escolar que calculé para el Banco Interamericano de Desarrollo. Muestra qué tan fácil es para los estudiantes llegar a la escuela en cinco países de América Latina, con un asistente de IA que convierte preguntas en lenguaje natural en SQL validado.",
+                proj_panama_t: "Explorador del Ciclo de Vida en Panamá",
+                proj_panama_d: "¿Cómo cambia la participación en educación, trabajo y jubilación a lo largo de la vida, y de forma tan desigual en Panamá? Este explorador lo muestra por edad, género y región, revelando dónde los jóvenes abandonan la escuela o las mujeres salen del mercado laboral.",
+                proj_location_t: "El lugar importa para desarrollar el potencial de las personas",
+                proj_location_d: "Los promedios nacionales ocultan grandes desigualdades. Este proyecto mide las brechas regionales en salud y educación dentro de los países y entre ellos, mostrando cuánto influye el lugar de nacimiento en el capital humano que una persona puede construir.",
+                proj_poverty_t: "Clasificación de pobreza con datos multimodales",
+                proj_poverty_d: "Las encuestas completas de pobreza son costosas y lentas. Este proyecto entrena un modelo de aprendizaje automático que clasifica hogares en categorías de pobreza a partir de imágenes satelitales y unas pocas preguntas de prueba de medios, una forma de menor costo para focalizar programas sociales donde faltan datos de encuestas.",
+                proj_chicago_t: "Crimen y asistencia escolar en Chicago",
+                proj_chicago_d: "¿El crimen del vecindario empuja a los estudiantes fuera de la escuela? Este tablero interactivo mapea los patrones de deserción en las escuelas de Chicago e identifica dónde el crimen pesa más sobre la asistencia.",
+                proj_oecd_t: "Desigualdades geográficas en el acceso a oportunidades",
+                proj_oecd_d: "El lugar donde las personas nacen y crecen moldea sus oportunidades de vida en los países de la OCDE. Para este capítulo del informe de la OCDE, creé y coordiné todas las visualizaciones de datos.",
+                link_platform: "Ver plataforma →",
+                link_project: "Ver proyecto →",
+                link_repo: "Ver repositorio →",
+                link_report: "Ver informe →",
+                note_private: "Repositorio privado, solicitar acceso",
+                view_all_pubs: "Ver todas las publicaciones →",
+                projects_h2: "Proyectos",
+                publications_h2: "Publicaciones",
+                cat_briefs: "Notas de política seleccionadas",
+                cat_articles: "Artículos en revistas arbitradas",
+                cv_h2: "Hoja de Vida",
+                cv_desc: "Descarga mi hoja de vida completa para conocer más sobre mi experiencia, formación y cualificaciones.",
+                cv_btn: "Descargar CV (PDF)",
+                contact_h2: "Contacto",
+                contact_desc: "No dudes en escribirme por correo o GitHub.",
+                contact_email: "Correo",
+                footer_rights: "Angela López. Todos los derechos reservados.",
+                tag_edupolicy: "Política educativa",
+                tag_ai: "Asistente IA",
+                tag_dataviz: "Visualización de datos",
+                tag_panama: "Panamá",
+                tag_stats: "Estadística",
+                tag_policyanalysis: "Análisis de políticas",
+                tag_ml: "Aprendizaje automático",
+                tag_poverty: "Pobreza"
+            };
+
+            var CV = {
+                en: { href: "assets/pdf/CV_Angela_Lopez_EN.pdf", download: "CV_Angela_Lopez_Sanchez_EN.pdf" },
+                es: { href: "assets/pdf/CV_Angela_Lopez_ES.pdf", download: "CV_Angela_Lopez_Sanchez_ES.pdf" }
+            };
+
+            var nodes = document.querySelectorAll('[data-i18n]');
+            // Cache the original English markup once.
+            nodes.forEach(function(el) { el.dataset.en = el.innerHTML; });
+
+            function applyLang(lang) {
+                nodes.forEach(function(el) {
+                    var key = el.getAttribute('data-i18n');
+                    if (lang === 'es' && ES[key] != null) {
+                        el.innerHTML = ES[key];
+                    } else {
+                        el.innerHTML = el.dataset.en;
+                    }
+                });
+
+                var cv = document.getElementById('cvDownload');
+                if (cv) {
+                    var c = CV[lang] || CV.en;
+                    cv.setAttribute('href', c.href);
+                    cv.setAttribute('download', c.download);
+                }
+
+                document.documentElement.lang = lang;
+                var btn = document.getElementById('langToggle');
+                if (btn) {
+                    // Show the language you can switch TO.
+                    btn.textContent = (lang === 'es') ? 'EN' : 'ES';
+                }
+                try { localStorage.setItem('lang', lang); } catch (e) {}
+            }
+
+            function updateUrl(lang) {
+                try {
+                    var p = new URLSearchParams(window.location.search);
+                    p.set('lang', lang);
+                    var newUrl = window.location.pathname + '?' + p.toString() + window.location.hash;
+                    window.history.replaceState(null, '', newUrl);
+                } catch (e) {}
+            }
+
+            // Language priority on load: URL ?lang= > saved choice > English.
+            var initial = 'en';
+            try {
+                var urlLang = new URLSearchParams(window.location.search).get('lang');
+                if (urlLang === 'es' || urlLang === 'en') {
+                    initial = urlLang;
+                } else {
+                    initial = localStorage.getItem('lang') || 'en';
+                }
+            } catch (e) {}
+            applyLang(initial);
+
+            var toggle = document.getElementById('langToggle');
+            if (toggle) {
+                toggle.addEventListener('click', function() {
+                    var current = document.documentElement.lang === 'es' ? 'es' : 'en';
+                    var next = current === 'es' ? 'en' : 'es';
+                    applyLang(next);
+                    updateUrl(next);
+                });
+            }
         })();
     </script>
 </body>

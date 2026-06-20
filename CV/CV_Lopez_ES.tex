@@ -1,0 +1,217 @@
+%--------------------------------------------------------------------------
+% Angela R. Lopez Sanchez - Hoja de Vida (Espanol)
+% Compilar con: xelatex CV_Lopez_ES.tex
+% Formato adaptado de Camacho_CV_Base.tex
+%--------------------------------------------------------------------------
+\documentclass[10pt]{article}
+
+%----- Packages ------------------------------------------------------------
+\usepackage[letterpaper,
+            top=0.52in, bottom=0.52in,
+            left=0.52in, right=0.52in]{geometry}
+
+\usepackage{fontspec}           % xelatex font selection
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[spanish,es-noindentfirst]{babel}
+\usepackage[hidelinks]{hyperref}
+
+%----- Font ----------------------------------------------------------------
+\setmainfont{Times New Roman}
+
+%----- Colors & Hyperlinks -------------------------------------------------
+\definecolor{urlblue}{RGB}{5,99,193} % Standard Word hyperlink blue
+\hypersetup{
+  colorlinks=true,
+  urlcolor=urlblue,
+  pdfauthor={Angela R. Lopez Sanchez},
+  pdftitle={Angela R. Lopez Sanchez - Hoja de Vida}
+}
+
+%----- Global spacing ------------------------------------------------------
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+%----- Section heading style -----------------------------------------------
+\titleformat{\section}
+  {\normalfont\large\bfseries\MakeUppercase}
+  {}{0em}{}
+  [\vspace{-10pt}\rule{\linewidth}{0.5pt}\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{10pt}{0pt}
+
+%----- Reusable layout commands --------------------------------------------
+\newcommand{\org}[2]{\noindent\textbf{#1}\hfill #2\par\vspace{0pt}}
+\newcommand{\role}[2]{\noindent\textit{#1}\hfill #2\par\vspace{0pt}}
+\newcommand{\edu}[2]{\noindent #1\hfill #2\par\vspace{0pt}}
+
+% Bullet list style
+\newenvironment{cvitems}{%
+  \begin{itemize}[
+    leftmargin=1.2em,
+    itemsep=0pt,
+    parsep=0pt,
+    topsep=1pt,
+    label={$\bullet$}]%
+}{\end{itemize}}
+
+\newcommand{\entrygap}{\vspace{6pt}}
+
+%==========================================================================
+\begin{document}
+%==========================================================================
+
+%------ ENCABEZADO ---------------------------------------------------------
+\begin{center}
+  {\LARGE\textbf{ANGELA R. LOPEZ SANCHEZ}}\\[4pt]
+  +1 (202) 390-4849 $|$
+  \href{mailto:alopezsanchezv@gmail.com}{alopezsanchezv@gmail.com} $|$
+  \href{https://github.com/AngelaLop}{GitHub} $|$
+  \href{https://angelalop.github.io/AngelaLopezS/}{Portafolio} $|$
+  \href{https://scholar.google.com/citations?user=wfO9incAAAAJ&hl=en}{Google Scholar}
+\end{center}
+
+\vspace{3pt}
+
+%------ EDUCACION ----------------------------------------------------------
+\section{Educaci\'on}
+
+\org{The University of Chicago}{Chicago, EE. UU.}
+\edu{Maestr\'ia en An\'alisis Computacional y Pol\'iticas P\'ublicas}{Junio de 2026}
+\textbf{Cursos relevantes:} Aprendizaje Autom\'atico Avanzado para Pol\'iticas P\'ublicas, Ciencias de la Computaci\'on con Aplicaciones, Computaci\'on en la Nube, Bases de Datos, Visualizaci\'on de Datos\\
+\textbf{Reconocimiento:} Banco de la Rep\'ublica, Beca Nacional al M\'erito, una de solo dos otorgadas a nivel nacional para estudios de maestr\'ia en pol\'iticas p\'ublicas
+
+\entrygap
+\org{Universidad de los Andes}{Bogot\'a, Colombia}
+\edu{Maestr\'ia en Ciencias Sociales con \'enfasis en Estudios Internacionales}{Abril de 2018}
+\textit{Tesis:} Evaluaci\'on de impacto del retorno de colombianos desde Venezuela sobre el bienestar de los hogares receptores
+
+\entrygap
+\org{Universidad Militar Nueva Granada}{Bogot\'a, Colombia}
+\edu{Pregrado en Econom\'ia (Economista)}{Octubre de 2011}
+
+%------ HABILIDADES --------------------------------------------------------
+\section{Habilidades}
+
+\textbf{Lenguajes de Programaci\'on:} Python, R, Stata, SQL, JavaScript, HTML.
+\textbf{Librer\'ias y Frameworks:} D3.js, Altair/Vega, Dash, Next.js, MapLibre.
+\textbf{Nube e Infraestructura de Datos:} AWS (S3, EC2, IAM), DuckDB, Supabase, Git/GitHub, pipelines reproducibles en CLI.
+\textbf{Geoespacial y Percepci\'on Remota:} Google Earth Engine, QGIS, ArcGIS, OSRM, FMM.
+\textbf{M\'etodos:} Aprendizaje autom\'atico, inferencia causal y econometr\'ia, an\'alisis geoespacial, microsimulaci\'on, datos de encuestas.
+\textbf{BI:} Power BI.\\
+\textbf{Idiomas:} Espa\~nol (Nativo), Ingl\'es (Fluido), Franc\'es (B\'asico)
+
+%------ EXPERIENCIA PROFESIONAL --------------------------------------------
+\section{Experiencia Profesional}
+
+\org{Banco Interamericano de Desarrollo (BID)}{Bogot\'a, Colombia (Remoto)}
+\role{Consultora Senior en An\'alisis Geoespacial}{Mayo de 2025 -- Presente}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Dise\~n\'e y entregu\'e el primer conjunto de datos regional de accesibilidad escolar para Am\'erica Latina y el Caribe (22 pa\'ises, 530.000 escuelas), hoy utilizado por los equipos de educaci\'on del BID para medir brechas de acceso
+  \item Constru\'i un pipeline reproducible en Python (CLI) que abarca geocodificaci\'on, control de calidad y modelaci\'on de tiempos de viaje por dos m\'etodos (FMM y enrutamiento de red OSRM) para calcular la accesibilidad a escala continental
+\end{cvitems}
+
+\entrygap
+\org{Organizaci\'on para la Cooperaci\'on y el Desarrollo Econ\'omicos (OCDE)}{Par\'is, Francia}
+\role{Consultora en Datos y Pol\'iticas}{Junio -- Septiembre de 2025}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Consolid\'e el primer conjunto de datos de capital social de la OCDE a nivel subnacional (TL2/TL3) para los pa\'ises miembros
+  \item Realic\'e el an\'alisis estad\'istico y dise\~n\'e todas las visualizaciones de datos del Cap\'itulo 3, ``Desigualdades geogr\'aficas en el acceso a oportunidades'', del informe insignia \textit{To Have and Have Not: How to Bridge the Gap in Opportunities}
+\end{cvitems}
+
+\entrygap
+\org{Banco Mundial}{Washington, D.C.}
+\role{Consultora en Pobreza}{Agosto de 2021 -- Agosto de 2024}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Simul\'e resultados de pobreza y desigualdad en Panam\'a bajo distintos escenarios de pol\'itica y macroecon\'omicos usando modelos de microsimulaci\'on en Stata, como insumo para las Reuniones Anuales y de Primavera del Banco
+  \item Evalu\'e el impacto distributivo de programas sociales (p.\,ej., transferencias monetarias) bajo distintos criterios de elegibilidad para orientar la focalizaci\'on de la poblaci\'on beneficiaria en Panam\'a
+  \item Elabor\'e y contribu\'i a 3 productos anal\'iticos sobre pobreza, desigualdad, brechas de g\'enero y exclusi\'on para apoyar el di\'alogo de pol\'itica con el gobierno, incluyendo una actualizaci\'on del Diagn\'ostico Sistem\'atico de Pa\'is y una Evaluaci\'on de Pobreza en la que lider\'e el cap\'itulo de fondo sobre mercado laboral
+\end{cvitems}
+
+\entrygap
+\org{Banco Interamericano de Desarrollo (BID)}{Washington, D.C.}
+\role{Consultora en Datos y Pol\'iticas}{Junio -- Noviembre de 2022}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Consolid\'e el primer conjunto de datos regional sobre las caracter\'isticas de las evaluaciones de aprendizaje para Am\'erica Latina y el Caribe
+  \item Redact\'e y entregu\'e el informe de pol\'itica \textit{El estado de la educaci\'on en Am\'erica Latina y el Caribe: las evaluaciones de aprendizaje}, como insumo para el di\'alogo de pol\'itica educativa basado en evidencia
+\end{cvitems}
+
+\entrygap
+\org{Banco Interamericano de Desarrollo (BID)}{Washington, D.C.}
+\role{Analista Econ\'omica, Divisi\'on de Educaci\'on}{Julio de 2018 -- Agosto de 2021}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Produje estad\'isticas de educaci\'on y sociales para pa\'ises de Am\'erica Latina y el Caribe a partir de encuestas de hogares y datos administrativos, generando productos anal\'iticos que apoyaron el di\'alogo de pol\'itica con gobiernos de la regi\'on
+  \item Brind\'e apoyo anal\'itico y estad\'istico para poner en marcha la nueva agenda de Educaci\'on Superior del Banco para Am\'erica Latina
+  \item Desarroll\'e herramientas de datos (un tablero y reportes automatizados) y asesor\'e a las Divisiones del Sector Social del Banco en an\'alisis de datos recurrente
+\end{cvitems}
+
+\entrygap
+\org{Departamento Administrativo Nacional de Estad\'istica (DANE)}{Bogot\'a, Colombia}
+\role{Coordinadora, Unidad de ODS}{Febrero -- Junio de 2018}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Lider\'e un equipo de 4 personas en distintas \'areas del DANE para definir y dise\~nar la metodolog\'ia de 56 indicadores nacionales de seguimiento a los Objetivos de Desarrollo Sostenible
+  \item Coordin\'e con entidades externas para cumplir los requerimientos de reporte de la Agenda Post-2015 y represent\'e a la oficina de estad\'istica de Colombia en 3 reuniones internacionales sobre metodolog\'ias de indicadores de los ODS
+\end{cvitems}
+
+\entrygap
+\org{Departamento Administrativo Nacional de Estad\'istica (DANE)}{Bogot\'a, Colombia}
+\role{Analista Econ\'omica, Unidad de Mercado Laboral}{Febrero de 2015 -- Enero de 2018}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Realic\'e an\'alisis mensuales del mercado laboral y de indicadores sociodemogr\'aficos de Colombia para difusi\'on nacional e internacional
+  \item Constru\'i y proces\'e las bases mensuales de la Encuesta de Hogares que sustentan las estad\'isticas oficiales del mercado laboral y socioecon\'omicas, y capacit\'e trimestralmente a encuestadores para asegurar la calidad de los datos
+\end{cvitems}
+
+\entrygap
+\org{Universidad Militar Nueva Granada}{Bogot\'a, Colombia}
+\role{Asistente de Investigaci\'on}{Febrero de 2013 -- Diciembre de 2014}
+\vspace{-1pt}
+\begin{cvitems}
+  \item Coautora de 7 ponencias acad\'emicas nacionales y 3 internacionales, 3 art\'iculos publicados y 8 objetos virtuales de aprendizaje
+  \item Dirig\'i las sesiones semanales del Grupo de Estudios Econ\'omicos y asesor\'e a estudiantes de pregrado en proyectos de iniciaci\'on cient\'ifica
+\end{cvitems}
+
+%------ PROYECTOS DESTACADOS -----------------------------------------------
+\section{Proyectos Destacados}
+
+\begin{cvitems}
+  \item \textbf{EduAccess LAC, Plataforma de Accesibilidad Escolar:} Desarroll\'e y publiqu\'e una geo-plataforma full-stack (Next.js, Supabase Postgres, worker cron en Railway) que convierte los indicadores de accesibilidad del BID para cinco pa\'ises de Am\'erica Latina y el Caribe en una herramienta que un director de ministerio sin perfil t\'ecnico puede usar; constru\'i una cascada de dos niveles de LLM (Llama 3.1/3.3) que traduce preguntas en lenguaje natural a SQL validado y protegido contra inyecci\'on de prompts, y resalta los resultados en un mapa MapLibre \href{https://eduaccess-lac.vercel.app/}{(En vivo)}
+  \item \textbf{Clasificaci\'on de Pobreza con Datos Multimodales:} Entren\'e un modelo de aprendizaje autom\'atico que clasifica hogares en categor\'ias de pobreza a partir de im\'agenes satelitales y unas pocas preguntas de prueba de medios (proxy means test), una forma de menor costo para focalizar programas sociales donde faltan datos de encuestas (Python, ML) \href{https://github.com/uchicago-capp30254-spr-25/project-alopezsanchez-cnunezh-jmcarias}{(Repositorio)}
+  \item \textbf{Explorador del Ciclo de Vida en Panam\'a:} Visualizaci\'on interactiva de c\'omo cambia la participaci\'on en educaci\'on, trabajo y jubilaci\'on seg\'un edad, g\'enero y regi\'on en Panam\'a, mostrando d\'onde los j\'ovenes abandonan la escuela o las mujeres salen del mercado laboral (Python, D3.js) \href{https://angelalop.github.io/capp30239_interactive_viz/}{(En vivo)}
+\end{cvitems}
+
+\vspace{2pt}
+Para la lista completa de proyectos, visite mi \href{https://angelalop.github.io/AngelaLopezS/}{portafolio}.
+
+%------ PUBLICACIONES ------------------------------------------------------
+\section{Publicaciones Seleccionadas}
+
+\textbf{Art\'iculos en Revistas Arbitradas}
+\begin{cvitems}
+  \item L\'opez, A.R., Okoye, K., Haruna, H., et al. (2022). Impact of Digital Technologies upon Teaching and Learning in Higher Education in Latin America: an Outlook on the Reach, Barriers, and Bottlenecks. \textit{Education and Information Technologies}
+  \item L\'opez, A.R., Virg\"uez, A.F., Silva, A.C., \& Sarmiento, J.A. (2017). Desigualdad de oportunidades en el sistema de educaci\'on p\'ublica en Bogot\'a, Colombia. \textit{Lecturas de Econom\'ia}, (87), 165--190
+  \item L\'opez, A.R., Virg\"uez, A.F., Sarmiento Espinel, J.A., \& Silva Arias, A.C. (2015). El efecto de la gerencia privada de escuelas p\'ublicas en el desempe\~no estudiantil en la educaci\'on media en Colombia. \textit{Ecos de Econom\'ia}, 19(41), 108--136
+\end{cvitems}
+
+\vspace{3pt}
+\textbf{Notas de Pol\'itica (Selecci\'on)}
+\begin{cvitems}
+  \item L\'opez, A. (2024). \textit{Panama Poverty Assessment: Technical Note on Labor Market}. The World Bank, Washington, D.C.
+  \item Arias, E., L\'opez, A., Due\~nas, X., \& Giambruno, C. (2024). \textit{El estado de la educaci\'on en Am\'erica Latina y el Caribe: las evaluaciones de aprendizaje}. Banco Interamericano de Desarrollo, Washington, D.C.
+  \item Arias, E., L\'opez, A., Elacqua, G., et al. (2021). \textit{Educaci\'on superior y COVID-19 en Am\'erica Latina y el Caribe: Financiamiento para los estudiantes}. Banco Interamericano de Desarrollo, Washington, D.C.
+\end{cvitems}
+
+\vspace{2pt}
+Para la lista completa de publicaciones, consulte mi \href{https://scholar.google.com/citations?user=wfO9incAAAAJ&hl=en}{perfil de Google Scholar}.
+
+%==========================================================================
+\end{document}
