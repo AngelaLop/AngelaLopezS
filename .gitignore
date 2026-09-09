@@ -20,3 +20,17 @@ __pycache__/
 
 # Node (if you add any later)
 node_modules/
+
+# Job application material - keep out of the public site
+CV/carta_*.md
+CV/email_*.md
+CV/aplicaciones_*.md
+CV/form_*.md
+CV/*.aux
+CV/*.log
+CV/*.out
+
+# Archivos pesados o sueltos que no forman parte del sitio
+educassess_complete.mp4
+/height.png
+/projects.png
