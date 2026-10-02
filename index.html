@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Image Zoom -->
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+    <!-- Visit counter (GoatCounter, private dashboard, no cookies) -->
+    <script data-goatcounter="https://angelalop.goatcounter.com/count"
+            async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
     <!-- Progress Bar -->
@@ -795,6 +798,14 @@
                 
                 // Scroll to top
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                // Count the section view (sections switch without a page load)
+                if (window.goatcounter && window.goatcounter.count) {
+                    window.goatcounter.count({
+                        path: location.pathname + targetId,
+                        title: document.title + ' ' + targetId
+                    });
+                }
             }
             
             // Handle clicks on navigation
